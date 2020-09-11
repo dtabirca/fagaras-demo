@@ -1,0 +1,345 @@
+html,
+body,
+.leaflet-map,
+.elevation-div {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-size: 11px !important;
+	font-weight: normal !important;
+}
+.leaflet-map {
+	height: 100vh;
+	max-height: 100vw;
+	background-color: lightgray !important;
+	filter: Chroma(Color = #000000);
+	b/ackground-color: darkgreen !important;
+}
+.track{
+
+}
+.elevation-div {
+	top:-25%;
+	height: 25%;
+	width:90vw;
+	left:5vw;
+	font: 12px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.lity{
+	background-color: transparent !important;
+}
+.lity-close{
+	display: none;
+}
+.lity-content img{
+	width:auto;
+	height: auto;
+	ma/x-height: 70vh;
+	max-width: 90vw;
+	box-shadow: none;
+}
+.lity-caption{
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	m/argin-top: -35px;
+	color: white;
+	top:0px;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+}
+.lity-wrap{
+	position:relative;	
+	margin: 15px auto auto auto;
+}
+.lity.lity-opened {
+	opacity: 0.95 !important;
+	tr/ansform: perspective(500px) rotateX(0deg) rotateX(2deg) rotateZ(0deg);
+}
+.lity-content{
+    ma/x-width: 80vw;
+    max-height: 90vh;
+    t/ransform:scale(0.9);
+    width: auto;
+    height: auto;
+    overflow: hidden;
+	margin:none;
+	box-shadow: none;
+    position: relative;
+    border-radius: 50% / 10%;
+    m/argin-top: 10vh;
+}
+.lity-compass{
+	background-image: url('compass.png');
+	background-color: transparent;
+	position: fixed;
+	width:100px;
+	height:100px;
+	z-index:99999;
+	top: 50px;
+	left: 50px;
+	background-size: 100px 100px;
+}
+.compass-n{
+	transform: perspective(100px) rotateX(30deg) rotate(0deg) ;
+}
+.compass-nw{
+	transform: perspective(100px) rotateX(30deg) rotate(45deg) ;
+}
+.compass-ne{
+	transform: perspective(100px) rotateX(30deg) rotate(315deg) ;
+}
+.compass-s{
+	transform: perspective(100px) rotateX(30deg) rotate(180deg);
+}
+.compass-sw{
+	transform: perspective(100px) rotateX(30deg) rotate(135deg);
+}
+.compass-se{
+	transform: perspective(100px) rotateX(30deg) rotate(230deg);
+}
+.compass-w{
+	transform: perspective(100px) rotateX(30deg) rotate(90deg);
+}
+.compass-e{
+	transform: perspective(100px) rotateX(30deg) rotate(270deg);
+}
+
+#map2, #map3{
+	visibility: hidden;
+}
+.elevation-div{
+	visibility: hidden;
+}
+.mini-map{
+	position:absolute;
+	top:15px;
+	left:5vw;
+	height:40vh;
+	width:40vh;
+	opacity:1;
+	tra/nsform: perspective(200px) rotateX(0deg) rotateX(5deg) rotateZ(0deg);
+	bor/der-radius: 5px;
+	border-radius: 20vh;
+	border:1px solid darkgray;
+}
+.mini-map2{
+	position:absolute;
+	top:15px;
+	right:5vw;
+	width:40vh;
+	height: 40vh;
+	color:white;
+	font-size: calc(.4em + 0.5vmax);
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	background: rgba(0, 0, 0, 0.6);
+	bor/der-radius: 5px;
+	border-radius: 20vh;
+	border:1px solid darkgray;	
+}
+.mini-map2 > div.leaflet-pane.leaflet-map-pane{
+    zoom: 150%;
+    margin-top: -25%;
+    margin-left: -25%;
+}
+#mini-photo{
+	position:absolute;
+	top:36vh;
+	right:5vw;
+	height:34vh;
+	width:34vh;
+	border-radius: 17vh;
+	opacity:1;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+}
+#mini-photo img{
+  	min-width: 100%;
+  	max-height: 100%;
+}
+#mini-caption{
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: -35px;
+	color: white;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.leaflet-edit-osm{
+	display: none;
+}
+.center{
+	position:relative;
+	z-index: 99999;
+	mar/gin: auto;
+	bac/kground-color: red;
+	font-size: 16px;
+	margin-top: -8px;
+	margin-left: -8px;
+	top:20vh;
+	left:20vh;
+	color:#222;
+}
+.white{
+	color: #fff;
+}
+#playme{
+	position:absolute;z-index:99999999;top:0vh;left:50vw;
+	display:none;
+}
+#playme button{
+	outline: none;
+	font-size: 30px;cursor: pointer;
+	background: rgba(0, 0, 0, 0.6);
+	color:white;
+	padding-top:70px;
+	border-radius: 100px;
+	font-size: 18px;
+	border: none;
+	width:200px;
+	height:200px;
+	margin-top: -100px;
+	margin-left: -100px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#remarks{
+	width:80%;
+	display: block;
+}
+#remarks-content{
+	font-size:11px;
+	display: inline-block;
+	margin-left:-100px;
+}
+#stats{
+	position:absolute;
+	top:50vh;
+	left:50vw;
+	margin-left:-30vh;
+	margin-top:-30vh;
+	width:60vh;
+	height:60vh;
+	color:white;
+	font-size: calc(.4em + 0.7vmax);
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 30vh;
+	visibility: hidden;
+}
+#speed,#end,#time,#asc,#desc{
+	d/isplay:none;
+}
+#stats p{
+	margin-top: 12vh;
+	margin-left: 19vh;
+}
+.elevation-control.elevation .elevation-toggle {
+  border:10px solid red;
+}
+.elevation-control.elevation .axis text{
+	f/ill: black;
+	fill: white;
+}
+.elevation-summary{
+	display: none;
+}
+.elevation-detached .lightblue-theme.elevation-control.elevation .area{
+	stroke: black !important;
+	fill:#228b22 !important;
+	fill-opacity:0.7 !important;
+}
+.elevation-control.elevation .axis line, .elevation-control.elevation .axis path{
+	stroke: black !important;	
+}
+.x.axis, .y.axis{
+	font-size: 11px;
+}
+.elevation-control.elevation.lightblue-theme svg{
+	background-color: transparent;
+}
+.elevation.elevation-div.elevation-detached{
+	z-index: 9999;
+}
+g.y.axis text, g.x.axis text{
+	display: none;
+}
+g.y.axis g text, g.x.axis g text{
+	display: inline;
+}
+.marker-label{
+    color: whitesmoke;
+    background-color: #333333;
+    margin-top: -20px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0.9;
+    font-size: 12px;
+}
+.material-icons.start,
+.material-icons.end{
+	color: #006600;
+}
+.material-icons.default,
+.material-icons.peak{
+	color: #423d45;
+}
+.material-icons.cabin{
+	color: #993300;
+}
+.material-icons.shelter{
+	color: #ad0202;
+}
+.material-icons.water{
+	color: #0066ff;
+}
+.marker-pin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  background: white;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
+  margin: -15px 0 0 -15px;
+}
+.marker-pin::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin: 3px 0 0 3px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+ }
+.custom-div-icon i {
+   position: absolute;
+   width: 22px;
+   font-size: 22px;
+   left: 0;
+   right: 0;
+   margin: 10px auto;
+   text-align: center;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip{
+	background-color: transparent;
+	color: white;
+}
+.mouse-focus-label-t{
+	font-size: 14px !important;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>TrailVwr</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+	<script src="https://unpkg.com/leaflet@1.3.2/dist/leaflet.js"></script>
+	<script src="https://unpkg.com/leaflet-ui@0.2.5/dist/leaflet-ui.js"></script>
+	<script src="https://unpkg.com/leaflet-providers@1.10.1/leaflet-providers.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation@0.6.8/leaflet-elevation.css" />
+	<script src="https://unpkg.com/@raruto/leaflet-elevation@0.6.8/leaflet-elevation.js"></script>
+
+	<script src="https://unpkg.com/jquery@1.11.2/dist/jquery.js"></script>
+	<script src="https://unpkg.com/lity@2.4.1/dist/lity.js"></script>
+	<link href="https://unpkg.com/lity@2.4.1/dist/lity.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link href="trailvwr.css" rel="stylesheet">
+	<script src="trails/Fagaras/trail.config.js"></script>
+</head>
+
+<body>
+
+	<div id="map" class="leaflet-map"></div>
+	<div id="map2" class="mini-map"><div class="center">+</div></div>
+	<div id="map3" class="mini-map2"><div class="center">+</div></div>
+	<div id="stats"><p>
+		<span id="start">Start: <b><span id="start-data">45.2567873, 22.8685827</span></b><br></span>
+		<span id="end">End: <b><span id="end-data">45.2567873, 22.8685827</span></b><br></span>
+		<span id="dist">Total distance: <b><span id="dist-data">0</span> km</b><br></span>
+		<span id="time">Total time: <b><span id="time-data">0</span></b><br></span>
+		<!--Avg. pace: <b><span id="pace">0</span> min/km</b><br-->
+		Moving time: <b><span id="mov">0</span></b><br>
+		<span id="speed">Avg. speed: <b><span id="speed-data">0</span> km/h</b><br></span>
+		<span id="asc">Total gain: <b><span id="asc-data">0</span> m</b><br></span>
+		<span id="desc">Total loss: <b><span id="desc-data">0</span> m</b><br></span>
+		<!--span id="min">Min. elevation: <b><span id="min-data">0</span> m</b><br></span>
+		<span id="max">Max. elevation: <b><span id="max-data">0</span> m</b><br></span-->
+		<span id="remarks">Remarks: <span id="remarks-content">-</span></span>
+		<!--Slope: <b><span id="slo">0</span></b><br>
+		Calories: <b><span id="cal">0</span> kcal</b><br>-->
+	</p>
+	</div>
+	<!--div id="mini-photo"><div id="mini-caption">Next Photo</div></div-->
+
+	<!--div id="playme" style="">
+		<button onclick="
+			animated(runner, 0);
+			this.parentNode.style.display = 'none';
+			document.getElementById('stats').style.display = 'none';
+		">Play</button-->
+	</div>
+	<script src="trailvwr.js"></script>
+</body>
+
+</html>
