@@ -119,27 +119,27 @@ body,
 	position:absolute;
 	top:15px;
 	left:5vw;
-	height:40vh;
-	width:40vh;
+	height:50vh;
+	width:50vh;
 	opacity:1;
 	tra/nsform: perspective(200px) rotateX(0deg) rotateX(5deg) rotateZ(0deg);
 	bor/der-radius: 5px;
-	border-radius: 20vh;
+	border-radius: 25vh;
 	border:1px solid darkgray;
 }
 .mini-map2{
 	position:absolute;
 	top:15px;
 	right:5vw;
-	width:40vh;
-	height: 40vh;
+	width:50vh;
+	height: 50vh;
 	color:white;
 	font-size: calc(.4em + 0.5vmax);
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: left;
 	background: rgba(0, 0, 0, 0.6);
 	bor/der-radius: 5px;
-	border-radius: 20vh;
+	border-radius: 25vh;
 	border:1px solid darkgray;	
 }
 .mini-map2 > div.leaflet-pane.leaflet-map-pane{
@@ -188,8 +188,8 @@ body,
 	font-size: 16px;
 	margin-top: -8px;
 	margin-left: -8px;
-	top:20vh;
-	left:20vh;
+	top:25vh;
+	left:25vh;
 	color:#222;
 }
 .white{
